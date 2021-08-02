@@ -45,6 +45,8 @@ function showTemperature(response) {
   displayCityName.innerHTML = `${cityName}`;
   displayWeather.innerHTML = `${weather}`;
 
+  celsius = response.data.main.temp;
+
   document.querySelector("h5").innerHTML = response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = `${Math.round(
     response.data.main.humidity
@@ -91,3 +93,28 @@ let currentLocationButton = document.querySelector("#current-location-btn");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Cardiff");
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let displayWeather = document.querySelector(".largeTemp");
+  let fahrenheitTemp = (celsius * 9) / 5 + 32;
+  displayWeather.innerHTML = Math.round(fahrenheitTemp);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let displayWeather = document.querySelector(".largeTemp");
+  displayWeather.innerHTML = Math.round(celsius);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
+let celsius = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);

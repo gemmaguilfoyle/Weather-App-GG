@@ -72,6 +72,17 @@ ul {
   font-size: 14px;
 }
 
+.active {
+  color: #142d4c;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #142d4c;
+}
+
 .credit {
   color: #385170;
 }
@@ -101,10 +112,6 @@ ul {
   display: block;
   margin: 0 auto;
   margin-top: -22px;
-}
-
-#forecast {
-  padding: 25px;
 }
 
 #humidity-style,
