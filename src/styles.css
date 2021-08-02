@@ -72,6 +72,13 @@ ul {
   color: #142d4c;
 }
 
+.units {
+  position: relative;
+  top: -40px;
+  right: 8px;
+  font-size: 14px;
+}
+
 #main-body {
   background-color: white;
   padding: 40px;
