@@ -14,10 +14,67 @@
     <title>GG's Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather App Test</h1>
-      <a href="" class="btn btn-primary"> hey</a>
-    </div>
+    <div class="container" id="wrapper">
+        <div class="container" id="main-body">
+          <form class="form-inline" id="searchForm">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-4">
+                  <input
+                    type="search"
+                    placeholder="Search for a city..."
+                    class="form-control"
+                    id="searchBar"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary" id="searchBtn">
+                  Search
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  type="submit"
+                  class="btn btn-secondary"
+                  id="current-location-btn"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+  
+          <div class="row">
+            <div class="col-6">
+              <h1>CARDIFF</h1>
+              <h2>
+                THURSDAY 24TH JUNE
+                <div>15:37</div>
+              </h2>
+              <img src="images/cloud.png" alt="clouds" />
+              <h5>SCATTERED CLOUDS</h5>
+            </div>
+            <div class="col-6">
+              <h4>22°C</h4>
+            </div>
+          </div>
+  
+          <div class="row justify-content-center" id="descriptors">
+            <div class="col-2 p-3" id="humidity-style">
+              Humidity
+              <div id="humidity">67</div>
+            </div>
+            <div class="col-3 p-3" id="feels-like-style">
+              Precipitation
+              <div id="feelsLike">20</div>
+            </div>
+            <div class="col-2 p-3" id="wind-style">
+              Wind
+              <div id="wind">1km/h</div>
+            </div>
+          </div>
+  
     <script src="src/script.js"></script>
   </body>
 </html>
