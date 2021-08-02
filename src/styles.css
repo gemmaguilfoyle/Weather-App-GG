@@ -21,7 +21,7 @@ h4 {
 }
 
 h5 {
-  margin-top: 12px;
+  margin-top: -10px;
   font-size: 15px;
   color: #385170;
   text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 
 ul {
-  margin: 0;
+  margin: 18px 0;
   padding: 0;
 }
 
@@ -64,19 +64,20 @@ ul {
   color: #142d4c;
 }
 
+.units {
+  color: #385170;
+  position: relative;
+  top: -45px;
+  right: 10px;
+  font-size: 14px;
+}
+
 .credit {
   color: #385170;
 }
 
 .credit:hover {
   color: #142d4c;
-}
-
-.units {
-  position: relative;
-  top: -40px;
-  right: 8px;
-  font-size: 14px;
 }
 
 #main-body {
@@ -95,10 +96,11 @@ ul {
   font-family: "Quicksand", sans-serif;
 }
 
-#exampleIcon {
-  width: 60px;
+#mainIcon {
+  width: 80px;
   display: block;
   margin: 0 auto;
+  margin-top: -22px;
 }
 
 #forecast {
