@@ -182,7 +182,7 @@ function dayAndNight() {
   if (dayNight >= 12 && dayNight < 18) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage =
-      "url('../weather-app-gg/images/midday.jpeg')";
+      "url('../weather-app-gg/images/midday.jpg')";
   } else if (dayNight >= 18 && dayNight < 22) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
@@ -198,7 +198,7 @@ function dayAndNight() {
   } else {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/morning.jpeg')";
+      "url('../weather-app-gg/images/morning.jpg')";
   }
 }
 
