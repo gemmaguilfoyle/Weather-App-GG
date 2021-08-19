@@ -16,7 +16,7 @@ h3 {
 
 h4 {
   font-size: 80px;
-  color: #ffc93c;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -127,7 +127,7 @@ ul {
   width: 80px;
   display: block;
   margin: 0 auto;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 
 #units-style,
