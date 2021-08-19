@@ -64,16 +64,8 @@ ul {
   color: #142d4c;
 }
 
-.units {
-  color: #385170;
-  position: relative;
-  top: -45px;
-  right: 22px;
-  font-size: 14px;
-}
-
 .active {
-  color: #142d4c;
+  color: #5c7797;
   cursor: default;
   text-decoration: none;
 }
@@ -138,6 +130,7 @@ ul {
   margin-top: -22px;
 }
 
+#units-style,
 #humidity-style,
 #feels-like-style,
 #wind-style {
