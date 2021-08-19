@@ -177,12 +177,11 @@ function dayAndNight() {
   let dayNight = current.getHours();
   if (dayNight >= 6 && dayNight < 19) {
     let background = document.querySelector("#main-body");
-    background.style.backgroundImage =
-      "url('../weather-app-gg/images/coldlandscape.jpeg')";
+    background.style.backgroundImage = "url('../images/snow.jpeg')";
   } else if (dayNight >= 20 && dayNight < 5) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/coldlandscape.jpeg')";
+      "url('../images/snow.jpeg')";
   }
 }
 
