@@ -15,7 +15,7 @@ h3 {
 }
 
 h4 {
-  font-size: 80px;
+  font-size: 90px;
   color: #ffffff;
   text-align: center;
 }
@@ -23,7 +23,7 @@ h4 {
 h5 {
   margin-top: -10px;
   font-size: 15px;
-  color: #385170;
+  color: #142d4c;
   text-align: center;
 }
 
@@ -43,8 +43,8 @@ ul {
 }
 
 .btn-primary {
-  background-color: #385170;
-  border: 1px solid #385170;
+  background-color: transparent;
+  border: none;
 }
 
 .btn-primary:hover {
@@ -52,8 +52,8 @@ ul {
 }
 
 .btn-secondary {
-  background-color: #385170;
-  border: 1px solid #385170;
+  background-color: transparent;
+  border: none;
 }
 
 .btn-secondary:hover {
@@ -95,21 +95,26 @@ ul {
 }
 
 .weather-forecast-temperatures {
+  color: #385170;
   font-size: 13px;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.7;
+  color: #385170;
+  opacity: 0.8;
 }
 
 #main-body {
-  background-color: white;
+  background-image: "url('../weather-app-gg/images/snow.jpeg')";
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 40px;
   margin-top: 20px;
   margin-bottom: 10px;
   border: 1px solid #ececec;
   box-shadow: 5px 5px 5px #ececec;
   border-radius: 15px;
+  min-height: 480px;
 }
 
 #wrapper {
@@ -126,6 +131,7 @@ ul {
   width: 80px;
   display: block;
   margin: 0 auto;
+  margin-top: -10px;
 }
 
 #units-style,

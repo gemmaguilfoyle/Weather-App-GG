@@ -33,6 +33,10 @@ let month = months[currentTime.getMonth()];
 if (minutes < 10) {
   minutes = "0" + minutes;
 }
+if (hours < 10) {
+  hours = "0" + hours;
+}
+
 h2.innerHTML = `${day} ${date} ${month} ${hours}:${minutes}`;
 
 let currentLocationButton = document.querySelector("#current-location-btn");
@@ -125,10 +129,9 @@ function showTemperature(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "1b5c1d1caa03aacc229826f51a319b3a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
+
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -175,16 +178,30 @@ function getCurrentLocation(event) {
 function dayAndNight() {
   let current = new Date();
   let dayNight = current.getHours();
-  if (dayNight >= 6 && dayNight < 19) {
+
+  if (dayNight >= 12 && dayNight < 18) {
     let background = document.querySelector("#main-body");
-    background.style.backgroundImage = "url('../images/snow.jpeg')";
-  } else if (dayNight >= 20 && dayNight < 5) {
+    background.style.backgroundImage =
+      "url('../weather-app-gg/images/midday.jpeg')";
+  } else if (dayNight >= 18 && dayNight < 22) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../images/snow.jpeg')";
+      "url('../weather-app-gg/images/evening.jpeg')";
+  } else if (dayNight >= 22 && dayNight < 5) {
+    let background = document.querySelector("#main-body");
+    background.style.backgroundImage = background.style.backgroundImage =
+      "url('../weather-app-gg/images/night.jpeg')";
+  } else if (dayNight >= 5 && dayNight < 7) {
+    let background = document.querySelector("#main-body");
+    background.style.backgroundImage = background.style.backgroundImage =
+      "url('../weather-app-gg/images/sunrise.jpeg')";
+  } else {
+    let background = document.querySelector("#main-body");
+    background.style.backgroundImage = background.style.backgroundImage =
+      "url('../weather-app-gg/images/morning.jpeg')";
   }
 }
 
 dayAndNight();
-searchCity("Cardiff");
+searchCity("London");
 displayForecast();
