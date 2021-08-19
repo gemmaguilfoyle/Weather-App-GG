@@ -118,12 +118,17 @@ ul {
   border: 1px solid #ececec;
   box-shadow: 5px 5px 5px #ececec;
   border-radius: 15px;
+  background-image: url("../images/snow.jpeg");
 }
 
 #wrapper {
   max-width: 600px;
   max-height: 700px;
   font-family: "Quicksand", sans-serif;
+}
+
+#location-btn-img {
+  width: 12px;
 }
 
 #mainIcon {

@@ -19,11 +19,11 @@
       <div class="container" id="main-body">
         <form class="form-inline" id="searchForm">
           <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
               <div class="mb-4">
                 <input
                   type="search"
-                  placeholder="Search for a city..."
+                  placeholder="Search..."
                   class="form-control"
                   id="searchBar"
                 />
@@ -31,7 +31,12 @@
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-primary" id="searchBtn">
-                Search
+                <img
+                  src="images/search.png"
+                  alt="search-button"
+                  id="search-btn-img"
+                  width="15px"
+                />
               </button>
             </div>
             <div class="col-auto">
@@ -40,7 +45,12 @@
                 class="btn btn-secondary"
                 id="current-location-btn"
               >
-                Current
+                <img
+                  src="images/location.png"
+                  alt="current-location"
+                  id="location-btn-img"
+                  width="15px"
+                />
               </button>
             </div>
           </div>
