@@ -174,17 +174,15 @@ function getCurrentLocation(event) {
 
 function dayAndNight() {
   let current = new Date();
-  let day_night = current.getHours();
-  if (day_night >= 6 && day_night < 19) {
+  let dayNight = current.getHours();
+  if (dayNight >= 6 && dayNight < 19) {
     let background = document.querySelector("#main-body");
-    background.style.backgroundColor = "rgb(147,217,238)";
-    background.style.background =
-      "linear-gradient(0deg, rgba(147,217,238,1) 0%, rgba(3,104,161,1) 100%)";
-  } else if (day_night >= 20 && day_night < 5) {
+    background.style.backgroundImage =
+      "url('../weather-app-gg/images/coldlandscape.jpeg')";
+  } else if (dayNight >= 20 && dayNight < 5) {
     let background = document.querySelector("#main-body");
-    background.style.backgroundColor = "rgb(27,43,98)";
-    background.style.background =
-      "linear-gradient(0deg, rgba(27,43,98,0.7539390756302521) 0%, rgba(3,3,20,1) 100%)";
+    background.style.backgroundImage = background.style.backgroundImage =
+      "url('../weather-app-gg/images/coldlandscape.jpeg')";
   }
 }
 
