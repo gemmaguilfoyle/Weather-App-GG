@@ -181,24 +181,23 @@ function dayAndNight() {
 
   if (dayNight >= 12 && dayNight < 18) {
     let background = document.querySelector("#main-body");
-    background.style.backgroundImage =
-      "url('../weather-app-gg/images/midday.jpg')";
+    background.style.backgroundImage = "url('../images/midday.jpg')";
   } else if (dayNight >= 18 && dayNight < 22) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/evening.jpg')";
+      "url('../images/evening.jpg')";
   } else if (dayNight >= 22 && dayNight < 5) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/night.jpg')";
+      "url('../images/night.jpg')";
   } else if (dayNight >= 5 && dayNight < 7) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/sunrise.jpg')";
+      "url('../images/sunrise.jpg')";
   } else {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
-      "url('../weather-app-gg/images/morning.jpg')";
+      "url('../images/morning.jpg')";
   }
 }
 

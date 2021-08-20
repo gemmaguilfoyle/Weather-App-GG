@@ -11,7 +11,7 @@ h2 {
 }
 
 h3 {
-  color: #142d4c
+  color: #142d4c;
   font-size: 15px;
 }
 
@@ -32,7 +32,6 @@ h5 {
 ul {
   margin: 18px 0;
   padding: 0;
-  
 }
 
 .form-inline {
@@ -57,8 +56,6 @@ ul {
 .btn-secondary:hover {
   background-color: #142d4c;
 }
-
-
 
 .active {
   color: #142d4c;
@@ -101,7 +98,7 @@ ul {
 }
 
 #main-body {
-  background-color: "linear-gradient(0deg, rgba(187,90,6,1) 14%, rgba(224,186,118,1) 47%, rgba(69,127,190,1) 90%)";
+  background-color: powderblue;
   background-image: "url('../weather-app-gg/images/morning.jpg')";
   background-repeat: no-repeat;
   background-size: cover;
