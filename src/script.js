@@ -182,11 +182,11 @@ function dayAndNight() {
   if (dayNight >= 12 && dayNight < 18) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = "url('../images/midday.jpg')";
-  } else if (dayNight >= 18 && dayNight < 22) {
+  } else if (dayNight >= 18 && dayNight < 0) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
       "url('../images/evening.jpg')";
-  } else if (dayNight >= 22 && dayNight < 5) {
+  } else if (dayNight >= 0 && dayNight < 5) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
       "url('../images/night.jpg')";
