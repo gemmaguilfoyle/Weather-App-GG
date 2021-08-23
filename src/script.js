@@ -182,7 +182,7 @@ function dayAndNight() {
   if (dayNight >= 12 && dayNight < 18) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = "url('../images/midday.jpg')";
-  } else if (dayNight >= 18 && dayNight < 0) {
+  } else if (dayNight >= 18 && dayNight < 23) {
     let background = document.querySelector("#main-body");
     background.style.backgroundImage = background.style.backgroundImage =
       "url('../images/evening.jpg')";
